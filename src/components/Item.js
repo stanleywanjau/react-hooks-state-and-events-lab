@@ -10,7 +10,7 @@ function Item({ name, category }) {
     <li className={isAdded ? "in-cart " : ""}>
       <span>{name}</span>
       <span className="category">{category}</span>
-      <button className="add" onClick={handleClick}>Add to Cart</button>
+      <button className="add" onClick={handleClick}>{isAdded? "Remove From Cart" :"Add to Cart"}</button>
     </li>
   );
 }
